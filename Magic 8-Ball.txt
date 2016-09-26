@@ -1,0 +1,159 @@
+var x=200;
+var y= 200;
+var answer = floor(random(1, 7));
+var shake=0;
+var draw = function() {
+    
+
+    noStroke();
+ //background
+    background(120, 35, 217);
+    fill(56, 194, 123,10);
+    ellipse(464,185,1000,1000);
+    ellipse(464,180,1000,1000);
+    ellipse(464,170,1000,1000);
+    ellipse(464,160,1000,1000);
+    ellipse(464,150,1000,1000);
+    ellipse(464,140,1000,1000);
+    ellipse(464,130,1000,1000);
+    ellipse(464,120,1000,1000);
+    ellipse(464,110,1000,1000);
+    ellipse(464,100,1000,1000);
+    ellipse(464,90,1000,1000);
+    ellipse(464,80,1000,1000);
+    ellipse(464,70,1000,1000);
+    ellipse(464,60,1000,1000);
+    ellipse(464,50,1000,1000);
+    ellipse(464,40,1000,1000);
+    ellipse(464,30,1000,1000);
+    ellipse(464,20,1000,1000);
+    ellipse(464,10,1000,1000);
+    ellipse(464,0,1000,1000);
+    ellipse(464,-10,1000,1000);
+    ellipse(464,-20,1000,1000);
+    ellipse(464,-30,1000,1000);
+    ellipse(464,-40,1000,1000);
+    ellipse(464,-50,1000,1000);
+    ellipse(464,-60,1000,1000);
+    ellipse(464,-70,1000,1000);
+    ellipse(464,-80,1000,1000);
+    ellipse(464,-90,1000,1000);
+    ellipse(464,-100,1000,1000);
+    ellipse(464,-110,1000,1000);
+    ellipse(464,-120,1000,1000);
+    ellipse(464,-130,1000,1000);
+    ellipse(464,-140,1000,1000);
+    ellipse(464,-150,1000,1000);
+    ellipse(464,-160,1000,1000);
+    ellipse(464,-170,1000,1000);
+    ellipse(464,-180,1000,1000);
+    ellipse(464,-190,1000,1000);
+    ellipse(464,-200,1000,1000);
+    ellipse(464,-210,1000,1000);
+    ellipse(464,-220,1000,1000);
+    ellipse(464,-230,1000,1000);
+    ellipse(464,-240,1000,1000);
+    ellipse(464,-250,1000,1000);
+    ellipse(464,-260,1000,1000);
+    ellipse(464,-270,1000,1000);
+    ellipse(464,-280,1000,1000);
+    ellipse(464,-290,1000,1000);
+    ellipse(464,-300,1000,1000);
+    ellipse(464,-310,1000,1000);
+    ellipse(464,-320,1000,1000);
+    ellipse(464,-330,1000,1000);
+    ellipse(464,-340,1000,1000);
+    ellipse(464,-350,1000,1000);
+    ellipse(464,-360,1000,1000);
+    ellipse(464,-370,1000,1000);
+    ellipse(464,-380,1000,1000);
+    ellipse(464,-390,1000,1000);
+    ellipse(464,-400,1000,1000);
+    ellipse(464,-410,1000,1000);
+    ellipse(464,-420,1000,1000);
+    ellipse(464,-430,1000,1000);
+    ellipse(464,-450,1000,1000);
+    ellipse(464,-460,1000,1000);
+    ellipse(464,-470,1000,1000);
+    ellipse(464,-480,1000,1000);
+    ellipse(464,-490,1000,1000);
+    ellipse(464,-500,1000,1000);
+
+//magic 8-ball
+    fill(0, 0, 0);
+    ellipse(x, y, 375, 375);
+    noStroke();
+    fill (63, 176, 120);
+    ellipse(x,y,230,230);
+    fill (50, 148, 99);
+    ellipse(x,y,210,210);
+    fill (63, 176, 120);
+    ellipse(x,y,190,190);
+
+
+
+
+
+    x= random(0,400);
+    y= random(0,400);
+    if(shake<50){
+        fill(0, 0, 0);
+        ellipse(x, y, 375, 375);
+        noStroke();
+        fill (63, 176, 120);
+        ellipse(x,y,230,230);
+        fill (50, 148, 99);
+        ellipse(x,y,210,210);
+        fill (63, 176, 120);
+        ellipse(x,y,190,190);
+        shake +=1;
+        x= random(0,400);
+        y= random(0,400);
+    }
+    else{
+        x=200;
+        y=200;
+    //answers
+    fill(255, 255, 255);
+    
+    textSize(20);
+    
+    if (answer===1){
+       text("NO",x-16,y+5);
+    }
+    
+    else if (answer === 2) {
+        text("YES", x-25, y);
+        
+    }
+    else if (answer === 3) {
+        text("POSSIBLY", x-47, y+1);
+        
+    }
+    else if (answer === 4) {
+        text("ASK ME LATER", x-75, y+2);
+        
+    }
+    
+    else if (answer === 5) {
+        text("MOST CERTAINLY", x-83, y+4);
+        
+    }
+    else if (answer === 6) {
+        text("NOT", x-25, y);
+        text("GOING TO HAPPEN", x-88, y+20);
+        
+    }
+    
+    else if (answer === 7) {
+        text("THE ANSWER CAN ONLY", x-71, y-7);
+        text("BE DECIDED BY YOU", x-68, y+17);
+        
+    }
+    }
+    
+    
+
+
+
+};
